@@ -2,14 +2,15 @@
 <html>
     <head>
         <title>Ejercicio 1 - Formulario </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Ejercicio1.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Ejercicio1.css"></link>
     <!-- BODY -->
     <body>
         <div class="container">
            <h3>Formulario de Registro</h3>
-            <form>
+            <form id="registerForm">
                 <div class="row">
                     <div class="col-md-8">
                         <label>Nombre: </label><br>
@@ -17,11 +18,11 @@
                         <label> Apellidos: </label><br>
                         <input type="text" id="inputFormLastname" name="userLastName"><br>
                         <label>Sexo: </label><br>
-                            <label><input type="radio" id="radioFormFemale" name="formGenderChoice"> Mujer</label>
-                            <label><input type="radio" id="radioFormMaleGender" name="formGenderChoice"> Hombre</label>
+                            <label><input type="radio" value="female" name="formGenderChoice"> Mujer</label>
+                            <label><input type="radio" value="male" name="formGenderChoice"> Hombre</label>
                     </div>
                     <div class="col-md-4">
-                        <img src="./femalePlaceholder.jpg" alt="Female Gender Default Picture" width="200" height="200">
+                        <img src="./femalePlaceholder.jpg" alt="Default Picture" width="200" height="200">
                     </div>
                 </div>
                 <div class="row">
@@ -48,10 +49,18 @@
                         <input type="text" name="knownLanguagesForm" id="userKnownLanguages">
                     </div>
                 </div>
-                <input type="button" value="Enviar">                                                                 
+                <input type="submit" value="Enviar" id="buttonSend">                                                                 
             </form>
         </div>
     </body>
     <!-- SCRIPTS -->
-    <script></script>
+    <script>
+        //Variables del formulario
+        var nameUser = document.getElementById('inputFormName').value;
+        var userLastName = document.getElementById('inputFormLastname').value;
+        
+        var userGender  = $("input[name='formGenderChoice']:checked").val();
+
+
+    </script>
 </html>
