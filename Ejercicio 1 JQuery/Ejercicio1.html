@@ -5,40 +5,53 @@
     </head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./Ejercicio1.css"></link>
+    <!-- BODY -->
     <body>
         <div class="container">
-           <h3 class="">Formulario de Registro</h3>
+           <h3>Formulario de Registro</h3>
             <form>
                 <div class="row">
-                    <div class="col">
-                        <label>Nombre: </label>
+                    <div class="col-md-8">
+                        <label>Nombre: </label><br>
                         <input type="text" id="inputFormName" name="userName"><br>
-                        <label> Apellidos: </label>
+                        <label> Apellidos: </label><br>
                         <input type="text" id="inputFormLastname" name="userLastName"><br>
                         <label>Sexo: </label><br>
                             <label><input type="radio" id="radioFormFemale" name="formGenderChoice"> Mujer</label>
                             <label><input type="radio" id="radioFormMaleGender" name="formGenderChoice"> Hombre</label>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <img src="./femalePlaceholder.jpg" alt="Female Gender Default Picture" width="200" height="200">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="row">
-                        <label>Dirección: </label>
-                        <input type="text" id="formAddress" name="userAddress"><br>
+                    <div class="col-md-12">
+                        <label>Dirección: </label><br>
+                        <input type="text" id="formAddress" name="userAddress">
                     </div>
-                   
-                    <label>Lugar de Nacimiento:</label><br>
-                    <input type="text" id="birthPlaceForm" name="userBirthPlace"><br>
-                    <label>Años de Experiencia: </label><br>
-                    <input type="number" id="expYearsForm" name="userExpYears"><br>
-                    <label>Lenguajes que domina:</label><br>
-                    <input type="text" name="knownLanguagesForm" id="userKnownLanguages">
-                </div>                
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Lugar de Nacimiento:</label><br>
+                        <input type="text" id="birthPlaceForm" name="userBirthPlace">
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label>Años de Experiencia: </label><br>
+                        <input type="number" id="expYearsForm" name="userExpYears"><br>
+                    </div>
+                </div>               
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label>Lenguajes que domina:</label><br>
+                        <input type="text" name="knownLanguagesForm" id="userKnownLanguages">
+                    </div>
+                </div>
+                <input type="button" value="Enviar">                                                                 
             </form>
-            
         </div>
     </body>
+    <!-- SCRIPTS -->
     <script></script>
 </html>
